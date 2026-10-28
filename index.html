@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Botwright Studio | Custom Discord Bots</title>
+<meta name="description" content="Custom Discord bots, paid-community tools and integrations. Clean, tested code you own.">
+<style>
+:root{--bg:#0e1117;--card:#161b26;--line:#2e3a55;--txt:#e9edf5;--mut:#9aa4b8;--a:#5b8cff;--b:#00d4a4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--txt);font-family:"Segoe UI",Inter,Helvetica,Arial,sans-serif;line-height:1.55}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0}
+.logo{font-weight:800;letter-spacing:1px}.logo span{color:var(--mut);font-weight:400}
+nav a.btn{font-size:15px}
+.btn{display:inline-block;background:linear-gradient(90deg,var(--a),var(--b));color:#06121a;font-weight:700;padding:12px 22px;border-radius:10px;text-decoration:none}
+.btn.ghost{background:none;border:1px solid var(--line);color:var(--txt)}
+header{padding:70px 0 60px;background:radial-gradient(circle at 80% 0,#2b4cff33,transparent 50%)}
+h1{font-size:clamp(36px,6vw,62px);line-height:1.05;letter-spacing:-1.5px;max-width:780px}
+h1 em{font-style:normal;background:linear-gradient(90deg,var(--a),var(--b));-webkit-background-clip:text;color:transparent}
+header p{font-size:20px;color:var(--mut);max-width:620px;margin:20px 0 30px}
+.row{display:flex;gap:12px;flex-wrap:wrap}
+section{padding:60px 0;border-top:1px solid #1c2333}
+h2{font-size:32px;letter-spacing:-.5px;margin-bottom:8px}
+.sub{color:var(--mut);margin-bottom:30px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px}
+.card h3{font-size:19px;margin-bottom:6px}.card p{color:var(--mut);font-size:15px}
+.prod{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media(max-width:760px){.prod{grid-template-columns:1fr}}
+.prod .card img{width:100%;border-radius:10px;margin-bottom:16px;display:block}
+.price{font-size:26px;font-weight:800;margin:10px 0 14px}
+.tiers .card .price{font-size:30px}
+.tiers li{list-style:none;color:var(--mut);font-size:15px;margin:6px 0}
+.tiers li::before{content:"✓ ";color:var(--b)}
+.steps{counter-reset:s}.steps .card h3::before{counter-increment:s;content:counter(s)". ";color:var(--b)}
+footer{padding:40px 0;color:var(--mut);font-size:14px;border-top:1px solid #1c2333}
+.note{font-size:14px;color:var(--mut);margin-top:18px}
+</style></head>
+<body>
+<div class="wrap"><nav><div class="logo">BOTWRIGHT <span>STUDIO</span></div><a class="btn" href="mailto:botwrightstudio@gmail.com?subject=Bot%20quote">Get a quote</a></nav></div>
+<header><div class="wrap">
+<h1>Custom <em>Discord bots</em> that run your community for you.</h1>
+<p>Tickets, verification, vouches, paid memberships, moderation and integrations. Clean, tested code that you own, delivered in days.</p>
+<div class="row"><a class="btn" href="mailto:botwrightstudio@gmail.com?subject=Bot%20quote">Tell us what you need</a><a class="btn ghost" href="#bots">Ready-made bots</a></div>
+</div></header>
+
+<section><div class="wrap">
+<h2>What we build</h2><p class="sub">If it happens in Discord, it can probably be automated.</p>
+<div class="grid">
+<div class="card"><h3>Paid memberships</h3><p>Stripe subscriptions that add and remove roles automatically. Tiers, grace periods, billing portal.</p></div>
+<div class="card"><h3>Trust &amp; safety</h3><p>Vouch and reputation systems, scam reports with staff review queues, verification gates.</p></div>
+<div class="card"><h3>Server operations</h3><p>Tickets, applications and whitelists, onboarding flows, logging, auto-moderation.</p></div>
+<div class="card"><h3>Integrations</h3><p>Stripe, Google Sheets, Twitch, YouTube, webhooks, CRMs and custom APIs.</p></div>
+<div class="card"><h3>Dashboards</h3><p>Web admin panels in Next.js so staff can manage the bot without commands.</p></div>
+<div class="card"><h3>Fixes &amp; upgrades</h3><p>Broken bot? Old discord.js version? We debug, refactor and add tests.</p></div>
+</div></div></section>
+
+<section id="bots"><div class="wrap">
+<h2>Ready-made bots</h2><p class="sub">Full source code, setup guide and 7 days of setup help. Instant download.</p>
+<div class="prod">
+<div class="card"><img src="https://payhip.com/cdn-cgi/image/format=auto,width=900/https://pe56d.s3.amazonaws.com/o_1k608g0jtqbs11jj1soi1ps811g61f.png" alt="Vouchly reputation lookup"><h3>Vouchly: Vouch &amp; Scam Reports</h3><p>Star-rated vouches with proof, /rep lookups, scam reports with Confirm/Dismiss buttons, and an auto trusted-trader role.</p><div class="price">$19</div><a class="btn" href="https://payhip.com/b/a3QOw">Buy Vouchly</a></div>
+<div class="card"><img src="https://payhip.com/cdn-cgi/image/format=auto,width=900/https://pe56d.s3.amazonaws.com/o_1k608hqo3g815tuc001io671d1f.png" alt="Subly paid role flow"><h3>Subly: Sell Discord Access</h3><p>Members pay through Stripe and get their role instantly; it's removed when they stop paying. Multi-tier, grace periods, billing portal.</p><div class="price">$29</div><a class="btn" href="https://payhip.com/b/M9EVi">Buy Subly</a></div>
+</div></div></section>
+
+<section><div class="wrap tiers">
+<h2>Custom builds</h2><p class="sub">Fixed price, agreed before we start. 50% to begin, 50% on delivery.</p>
+<div class="grid">
+<div class="card"><h3>Starter</h3><div class="price">from $150</div><ul><li>One focused feature</li><li>Up to 3 commands</li><li>Source code + setup guide</li><li>2–3 day delivery</li></ul></div>
+<div class="card"><h3>Pro</h3><div class="price">from $450</div><ul><li>Multiple systems</li><li>Database + admin commands</li><li>One API integration</li><li>5 day delivery</li></ul></div>
+<div class="card"><h3>Custom</h3><div class="price">from $900</div><ul><li>Bot + web dashboard</li><li>Payments, CRM, any API</li><li>Hosting setup</li><li>Scoped together</li></ul></div>
+</div>
+<p class="note">Every project includes full source code, a setup guide and 7 days of free bug fixes.</p>
+</div></section>
+
+<section><div class="wrap steps">
+<h2>How it works</h2><p class="sub">No calls needed. Everything over email or Discord.</p>
+<div class="grid">
+<div class="card"><h3>Describe it</h3><p>Email what you want the bot to do, in plain words.</p></div>
+<div class="card"><h3>Get a fixed quote</h3><p>We reply within 24 hours with a plan, a price and a timeline.</p></div>
+<div class="card"><h3>We build &amp; test</h3><p>You see progress along the way. Core logic ships with automated tests.</p></div>
+<div class="card"><h3>You own it</h3><p>Full code, setup guide, and a week of free fixes.</p></div>
+</div></div></section>
+
+<section><div class="wrap">
+<h2>About</h2>
+<p class="sub" style="max-width:720px">Botwright Studio is run by Joseph, a developer in Albuquerque, NM, who has shipped paid Discord systems for Minecraft trading communities. We use an AI-first development workflow: code is generated and tested by an AI engineering agent, then reviewed and delivered by Joseph. That's how we keep prices low and turnaround fast.</p>
+<a class="btn" href="mailto:botwrightstudio@gmail.com?subject=Bot%20quote">botwrightstudio@gmail.com</a>
+</div></section>
+
+<footer><div class="wrap">© 2026 Botwright Studio · <a href="mailto:botwrightstudio@gmail.com">botwrightstudio@gmail.com</a></div></footer>
+</body></html>
